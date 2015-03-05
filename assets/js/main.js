@@ -1,1 +1,2 @@
-console.log("Main js files is loaded");
+// Initialize Foundation
+$(document).foundation();

@@ -1,5 +1,6 @@
 {
   "name": "myfolio",
+  "version": "0.0.1",
   "devDependencies": {
     "juice": "~1.0.1",
     "foundation": "zurb/bower-foundation#~5.5.1"

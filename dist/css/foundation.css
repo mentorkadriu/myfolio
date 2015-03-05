@@ -3,11 +3,11 @@ meta.foundation-version {
 
 meta.foundation-mq-small {
   font-family: "/only screen/";
-  width: 0; }
+  width: 0em; }
 
 meta.foundation-mq-small-only {
   font-family: "/only screen and (max-width: 40em)/";
-  width: 0; }
+  width: 0em; }
 
 meta.foundation-mq-medium {
   font-family: "/only screen and (min-width:40.063em)/";
@@ -54,7 +54,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -113,7 +113,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 74.188rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -911,7 +911,7 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -1304,7 +1304,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2538,7 +2538,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -2983,7 +2983,7 @@ label.error {
 
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3357,7 +3357,7 @@ ul.pagination {
     color: #EEEEEE;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    font-family: 'Open Sans', sans-serif; }
   .pricing-table .price {
     background-color: #F6F6F6;
     padding: 0.938rem 1.25rem;
@@ -3365,7 +3365,7 @@ ul.pagination {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    font-family: 'Open Sans', sans-serif; }
   .pricing-table .description {
     background-color: #FFFFFF;
     padding: 0.938rem;
@@ -3533,7 +3533,7 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal {
       width: 80%;
-      max-width: 62.5rem;
+      max-width: 74.188rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3549,35 +3549,35 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal.tiny {
       width: 30%;
-      max-width: 62.5rem;
+      max-width: 74.188rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.small {
       width: 40%;
-      max-width: 62.5rem;
+      max-width: 74.188rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.medium {
       width: 60%;
-      max-width: 62.5rem;
+      max-width: 74.188rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.large {
       width: 70%;
-      max-width: 62.5rem;
+      max-width: 74.188rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.xlarge {
       width: 95%;
-      max-width: 62.5rem;
+      max-width: 74.188rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3592,7 +3592,7 @@ ul.pagination {
     @media only screen and (min-width:40.063em) {
       .reveal-modal.full {
         width: 100%;
-        max-width: 62.5rem;
+        max-width: 74.188rem;
         left: 0;
         right: 0;
         margin: 0 auto; } }
@@ -3614,7 +3614,7 @@ ul.pagination {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  font-family: 'Open Sans', sans-serif; }
   .side-nav li {
     margin: 0 0 0.438rem 0;
     font-size: 0.875rem;
@@ -3630,7 +3630,7 @@ ul.pagination {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
       font-weight: normal;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+      font-family: 'Open Sans', sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -3748,7 +3748,7 @@ ul.pagination {
     float: left;
     margin-left: 1rem;
     margin-bottom: 0;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -3916,7 +3916,7 @@ table {
       background-color: #EFEFEF;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background-color: #e1e1e1; }
@@ -4216,7 +4216,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 0.938rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 0.813rem;
       font-weight: normal;
       text-transform: none; }
@@ -4413,7 +4413,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 74.188rem;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -4704,7 +4704,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;

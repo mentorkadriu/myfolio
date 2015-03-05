@@ -1,5 +1,5 @@
 doctype
-html
+html(class="no-js", lang="en")
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -7,15 +7,20 @@ html
     meta(name="author", content="")
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    // Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css')
     // Imported from bower_components/foundation/scss/normalize.scss
-    link(rel="stylesheet", href="css/normailze.css")
+    link(rel="stylesheet", href="css/normalize.css")
     // Imported from bower_components/foundation/scss/foundation.scss  
     link(rel="stylesheet", href="css/foundation.css")
     link(rel="stylesheet", href="css/main.css")
     // Imported from bower_components/foundation/js/vendor/modernizr.js
     script(src="js/modernizr.js")
   body.no-js
-
+    .full-width
+        .row.collapse
+            .small-12.columns
+                
     // Imported from bower_components/jquery/dist/jquery.min.js
     script(src="js/jquery.min.js")
     // Imported from bower_components/foundation/js/foundation.min.js
