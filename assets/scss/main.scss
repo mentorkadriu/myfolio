@@ -24,10 +24,6 @@
 
 .top-bar {
 	.name {
-		padding-left: rem-calc(15);
-		@media #{$large-up}{
-			padding-left: 0;
-		}
 		h1 {
 			color: $white;
 			font-weight: bold;

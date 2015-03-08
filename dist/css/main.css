@@ -14,17 +14,12 @@
 #header {
   background-color: #02918c; }
 
-.top-bar .name {
-  padding-left: 0.938rem; }
-  @media only screen and (min-width:64.063em) {
-    .top-bar .name {
-      padding-left: 0; } }
-  .top-bar .name h1 {
-    color: #FFFFFF;
-    font-weight: bold;
-    text-transform: uppercase; }
-  .top-bar .name span {
-    color: #cfc91d; }
+.top-bar .name h1 {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase; }
+.top-bar .name span {
+  color: #cfc91d; }
 .top-bar .top-bar-section li a {
   text-transform: uppercase; }
 
