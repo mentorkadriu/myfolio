@@ -1,1 +1,6 @@
-console.log("Main js files is loaded");
+// Initialize Foundation
+
+$(document).ready(function(){
+$(document).foundation();
+	smoothScroll.init();
+});

@@ -1,2 +1,302 @@
 @import "juice";
 @import "foundation/settings";
+// Globals
+
+.full-width {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.button {
+	color: $black !important;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/*==============================
+=            Header            =
+==============================*/
+
+#header {
+	background-color: $green;
+}
+
+.top-bar {
+	.name {
+		padding-left: rem-calc(15);
+		@media #{$large-up}{
+			padding-left: 0;
+		}
+		h1 {
+			color: $white;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		span {
+			color: $yellow;
+		}
+	}
+	.top-bar-section {
+		li {
+			a {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+/*-----  End of Header  ------*/
+
+
+/*============================
+=            Home            =
+============================*/
+
+#home {
+	color: $white;
+    background-image:url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width:100%;
+    margin:0 auto;
+    color: #ffffff;
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(50);
+    @media #{$medium-up}{
+    	padding-top: rem-calc(130);
+    	padding-bottom: rem-calc(130);
+    }
+    @media #{$large-up}{
+    	padding-top: rem-calc(200);
+    	padding-bottom: rem-calc(200);
+    }
+}
+
+h3.h-subtitle {
+	font-size: rem-calc(23);
+	color: $white;
+	@media #{$medium-up}{
+		font-size: rem-calc(30);
+	}
+}
+h1.h-title {
+	font-size: rem-calc(40);
+	font-weight: bold;
+	color: $white;
+	text-transform: uppercase;
+	@media #{$medium-up}{
+		font-size: rem-calc(68);
+	}
+}
+p.h-desc {
+	font-size: rem-calc(16);
+	color: $white;
+	@media #{$medium-up}{
+		font-size: rem-calc(18);
+	}
+}
+
+.h-bracket {
+	i {
+		font-size: rem-calc(25);
+		@media #{$medium-up}{
+			font-size: rem-calc(50);
+		}
+	}
+	margin-bottom: rem-calc(30);
+}
+
+/*-----  End of Home  ------*/
+
+/*=============================
+=            About            =
+=============================*/
+
+#about {
+	padding-top: rem-calc(30);
+	margin-bottom: rem-calc(30);
+	@media #{$medium-up}{
+		padding-top: rem-calc(80);
+		margin-bottom: rem-calc(80);
+	}
+}
+
+.sector {
+	&-header {
+		color: $green;
+		font-size: rem-calc(30);
+		font-weight: 700;
+		text-transform: uppercase;
+		@media #{$medium-up}{
+			font-size: rem-calc(46);
+		}
+	}
+	&-line {
+		display: block;
+		color: $gray;
+		padding-top: rem-calc(10);
+		padding-bottom: rem-calc(10);
+		@media #{$medium-up}{
+			padding-top: rem-calc(20);
+			padding-bottom: rem-calc(20);
+		}
+	}
+	&-description {
+		color: $gray;
+	}
+}
+
+.box {
+	&.box-about {
+		@media #{$large-up}{
+			padding: rem-calc(35);
+		}
+		text-align: center;
+	}
+	&.box-services {
+		padding-top: rem-calc(15);
+		text-align: center;
+		@media #{$medium-up}{
+			padding-top: rem-calc(35);
+			text-align: left;
+		}
+	}
+	i {
+		color: $green;
+		font-size: rem-calc(35);
+	}
+	h4 {
+		font-weight: 700;
+	}
+	p {
+		font-size: rem-calc(16);
+		@media #{$medium-up}{
+			font-size: rem-calc(12);
+		}
+
+	}
+}
+
+
+/*-----  End of About  ------*/
+
+/*===============================
+=            My work            =
+===============================*/
+
+#work {
+	&-header {
+		@extend #about;
+	}
+	.columns {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.box-work {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width:100%;
+	height: auto;
+	text-align: center;
+	cursor: pointer;
+	img {
+		width: 100%;
+	}
+	&:hover .overlay {
+		display: block;
+		opacity: 1;
+		transition: opacity 0.5s;
+	}
+	.overlay {
+		background-color: $green;
+		background-color: rgba(2,145,140,.8);
+		color: $white;
+		opacity: 0;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		.inner {
+			@include vert-centerer;
+			h4 {
+			color: $white;
+			font-weight: bold;
+			}
+			p {
+				font-size: rem-calc(11);
+			}
+		}
+	}
+}
+
+
+/*-----  End of My work  ------*/
+
+/*================================
+=            Services            =
+================================*/
+
+#services {
+	background-color: #f0f0e8;
+}
+#services-left {
+	padding-top: rem-calc(35);
+	padding-bottom: rem-calc(35);
+	@media #{$medium-up}{
+		padding-top: rem-calc(70);
+		padding-bottom: rem-calc(70);
+	}
+}
+
+/*-----  End of Services  ------*/
+
+/*===============================
+=            Contact            =
+===============================*/
+
+#contact {
+	@extend #about;
+}
+
+#contact-form {
+	padding-top: rem-calc(30);
+	padding-bottom: rem-calc(30);
+	background-color: #0b0b0b;
+	@media #{$medium-up}{
+		padding-top: rem-calc(50);
+		padding-bottom: rem-calc(50);
+	}
+}
+
+form {
+	input[type="text"], input[type="email"], textarea {
+		text-align: center;
+		text-transform: uppercase;
+		color: $gray;
+		border-bottom-style: solid;
+		border-bottom-width: 1px !important;
+		border-bottom-color: $white !important;
+		padding-top: rem-calc(20);
+	}
+}
+
+/*-----  End of Contact  ------*/
+
+
+
+
+
+
+
+
+

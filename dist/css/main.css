@@ -1,0 +1,225 @@
+.full-width {
+  position: relative;
+  float: left;
+  width: 100%; }
+
+.button {
+  color: #0b0b0b !important;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/*==============================
+=            Header            =
+==============================*/
+#header {
+  background-color: #02918c; }
+
+.top-bar .name {
+  padding-left: 0.938rem; }
+  @media only screen and (min-width:64.063em) {
+    .top-bar .name {
+      padding-left: 0; } }
+  .top-bar .name h1 {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .top-bar .name span {
+    color: #cfc91d; }
+.top-bar .top-bar-section li a {
+  text-transform: uppercase; }
+
+/*-----  End of Header  ------*/
+/*============================
+=            Home            =
+============================*/
+#home {
+  color: #FFFFFF;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem; }
+  @media only screen and (min-width:40.063em) {
+    #home {
+      padding-top: 8.125rem;
+      padding-bottom: 8.125rem; } }
+  @media only screen and (min-width:64.063em) {
+    #home {
+      padding-top: 12.5rem;
+      padding-bottom: 12.5rem; } }
+
+h3.h-subtitle {
+  font-size: 1.438rem;
+  color: #FFFFFF; }
+  @media only screen and (min-width:40.063em) {
+    h3.h-subtitle {
+      font-size: 1.875rem; } }
+
+h1.h-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-transform: uppercase; }
+  @media only screen and (min-width:40.063em) {
+    h1.h-title {
+      font-size: 4.25rem; } }
+
+p.h-desc {
+  font-size: 1rem;
+  color: #FFFFFF; }
+  @media only screen and (min-width:40.063em) {
+    p.h-desc {
+      font-size: 1.125rem; } }
+
+.h-bracket {
+  margin-bottom: 1.875rem; }
+  .h-bracket i {
+    font-size: 1.563rem; }
+    @media only screen and (min-width:40.063em) {
+      .h-bracket i {
+        font-size: 3.125rem; } }
+
+/*-----  End of Home  ------*/
+/*=============================
+=            About            =
+=============================*/
+#about, #work-header, #contact {
+  padding-top: 1.875rem;
+  margin-bottom: 1.875rem; }
+  @media only screen and (min-width:40.063em) {
+    #about, #work-header, #contact {
+      padding-top: 5rem;
+      margin-bottom: 5rem; } }
+
+.sector-header {
+  color: #02918c;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+  @media only screen and (min-width:40.063em) {
+    .sector-header {
+      font-size: 2.875rem; } }
+.sector-line {
+  display: block;
+  color: #7e8286;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem; }
+  @media only screen and (min-width:40.063em) {
+    .sector-line {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem; } }
+.sector-description {
+  color: #7e8286; }
+
+.box.box-about {
+  text-align: center; }
+  @media only screen and (min-width:64.063em) {
+    .box.box-about {
+      padding: 2.188rem; } }
+.box.box-services {
+  padding-top: 0.938rem;
+  text-align: center; }
+  @media only screen and (min-width:40.063em) {
+    .box.box-services {
+      padding-top: 2.188rem;
+      text-align: left; } }
+.box i {
+  color: #02918c;
+  font-size: 2.188rem; }
+.box h4 {
+  font-weight: 700; }
+.box p {
+  font-size: 1rem; }
+  @media only screen and (min-width:40.063em) {
+    .box p {
+      font-size: 0.75rem; } }
+
+/*-----  End of About  ------*/
+/*===============================
+=            My work            =
+===============================*/
+#work .columns {
+  padding-left: 0;
+  padding-right: 0; }
+
+.box-work {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  cursor: pointer; }
+  .box-work img {
+    width: 100%; }
+  .box-work:hover .overlay {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s; }
+  .box-work .overlay {
+    background-color: #02918c;
+    background-color: rgba(2, 145, 140, 0.8);
+    color: #FFFFFF;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+    .box-work .overlay .inner {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .box-work .overlay .inner h4 {
+        color: #FFFFFF;
+        font-weight: bold; }
+      .box-work .overlay .inner p {
+        font-size: 0.688rem; }
+
+/*-----  End of My work  ------*/
+/*================================
+=            Services            =
+================================*/
+#services {
+  background-color: #f0f0e8; }
+
+#services-left {
+  padding-top: 2.188rem;
+  padding-bottom: 2.188rem; }
+  @media only screen and (min-width:40.063em) {
+    #services-left {
+      padding-top: 4.375rem;
+      padding-bottom: 4.375rem; } }
+
+/*-----  End of Services  ------*/
+/*===============================
+=            Contact            =
+===============================*/
+#contact-form {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  background-color: #0b0b0b; }
+  @media only screen and (min-width:40.063em) {
+    #contact-form {
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem; } }
+
+form input[type="text"], form input[type="email"], form textarea {
+  text-align: center;
+  text-transform: uppercase;
+  color: #7e8286;
+  border-bottom-style: solid;
+  border-bottom-width: 1px !important;
+  border-bottom-color: #FFFFFF !important;
+  padding-top: 1.25rem; }
+
+/*-----  End of Contact  ------*/

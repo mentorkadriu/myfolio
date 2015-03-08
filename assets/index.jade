@@ -11,18 +11,228 @@ html(class="no-js", lang="en")
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css')
     // Imported from bower_components/foundation/scss/normalize.scss
     link(rel="stylesheet", href="css/normalize.css")
+    // Imported from bower_components/fontsawesome/css/font-awesome.min.css
+    link(rel="stylesheet", href="css/font-awesome.min.css")
     // Imported from bower_components/foundation/scss/foundation.scss  
     link(rel="stylesheet", href="css/foundation.css")
     link(rel="stylesheet", href="css/main.css")
     // Imported from bower_components/foundation/js/vendor/modernizr.js
     script(src="js/modernizr.js")
   body.no-js
-    .full-width
-        .row.collapse
+    header.full-width#header
+        .row
             .small-12.columns
-                
+                .contain-to-grid
+                    nav.top-bar(data-topbar , role="navigation")
+                        ul.title-area
+                            li.name 
+                                h1 My
+                                    span folio
+                            li.toggle-topbar.menu-icon
+                                a(href="#")
+                                    span Menu
+                        section.top-bar-section
+                            // Right Nav Section
+                            ul.right
+                                li.active
+                                    a(href="#home", data-scroll) Home
+                                li
+                                    a(href="#about", data-scroll) About me
+                                li
+                                    a(href="#services", data-scroll) Services
+                                li
+                                    a(href="#work", data-scroll) My work
+                                li
+                                    a(href="#contact", data-scroll) Contact me 
+    // End header
+    // Home
+    section.full-width#home
+        .row
+            .small-12.columns.text-center
+                h3.h-subtitle Lorem ipsum dolor sit iusmod tempor
+                h1.h-title incididunt bore
+                p.h-desc Orem ipsum dolor sit amet, consectetur
+                div.h-bracket
+                    i.fa.fa-diamond
+                a(href="#").button.success Know more
+    // End home
+    // About
+    section.full-width#about
+        .row
+            .small-12.medium-9.medium-centered.columns
+                .sector.text-center
+                    h1.sector-header About me
+                    .sector-line ~~~~~~~~ :: ~~~~~~~~
+                    p.sector-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        strong quis nostrud exercitation ullamco 
+                        | aboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+            .small-12.columns
+                .row
+                    .small-12.medium-6.large-3.columns
+                        .box.box-about
+                            i.fa.fa-lightbulb-o
+                            h4 Title goes here
+                            p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+                    .small-12.medium-6.large-3.columns
+                        .box.box-about
+                            i.fa.fa-pencil
+                            h4 Title goes here
+                            p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+                    .small-12.medium-6.large-3.columns
+                        .box.box-about
+                            i.fa.fa-gear
+                            h4 Title goes here
+                            p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+                    .small-12.medium-6.large-3.columns
+                        .box.box-about
+                            i.fa.fa-desktop
+                            h4 Title goes here
+                            p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+    // End about
+    // Services
+    .full-width#services
+        .row
+            .small-12.medium-6.columns
+                .row#services-left
+                    .small-12.columns.small-text-center.medium-text-left
+                        .sector
+                            h1.sector-header Services
+                            .sector-line ~~~~~~~~ :: ~~~~~~~~
+                            p.sector-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            | sed do tempor incididunt ut labore et dolore magna aliqua.
+                    .small-12.columns
+                        .row
+                            .small-12.medium-6.columns
+                                .box.box-services
+                                    i.fa.fa-globe
+                                    h4 Title goes here
+                                    p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+                            .small-12.medium-6.columns
+                                .box.box-services
+                                    i.fa.fa-search
+                                    h4 Title goes here
+                                    p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+                            .small-12.medium-6.columns
+                                .box.box-services
+                                    i.fa.fa-clock-o
+                                    h4 Title goes here
+                                    p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+                            .small-12.medium-6.columns
+                                .box.box-services
+                                    i.fa.fa-bar-chart
+                                    h4 Title goes here
+                                    p onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+            .small-12.medium-6.columns
+                img(src="images/llaptop.jpg", alt="")
+    // End sevices
+    // Work
+    .full-width#work
+        .row#work-header
+            .small-12.medium-9.medium-centered.columns
+                .sector.text-center
+                    h1.sector-header My Work
+                    .sector-line ~~~~~~~~ :: ~~~~~~~~
+                    p.sector-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        | sed do tempor incididunt ut labore et dolore magna aliqua.
+        .full-width
+            .small-12.medium-6.large-3.columns
+                .box-work
+                    img(src="images/work/image-1.jpg", alt="")
+                    .overlay
+                        .inner
+                            h4 Title goes here
+                            p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+            .small-12.medium-6.large-3.columns
+                .box-work
+                    img(src="images/work/image-2.jpg", alt="")
+                    .overlay
+                        .inner
+                            h4 Title goes here
+                            p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+            .small-12.medium-6.large-3.columns
+                .box-work
+                    img(src="images/work/image-3.jpg", alt="")
+                    .overlay
+                        .inner
+                            h4 Title goes here
+                            p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+            .small-12.medium-6.large-3.columns
+                .box-work
+                    img(src="images/work/image-4.jpg", alt="")
+                    .overlay
+                        .inner
+                            h4 Title goes here
+                            p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+            .small-12.medium-6.large-3.columns
+                .box-work
+                    img(src="images/work/image-5.jpg", alt="")
+                    .overlay
+                        .inner
+                            h4 Title goes here
+                            p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+            .small-12.medium-6.large-3.columns
+                .box-work
+                    img(src="images/work/image-6.jpg", alt="")
+                    .overlay
+                        .inner
+                            h4 Title goes here
+                            p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+            .small-12.medium-6.large-3.columns
+                .box-work
+                    img(src="images/work/image-1.jpg", alt="")
+                    .overlay
+                        .inner
+                            h4 Title goes here
+                            p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+            .small-12.medium-6.large-3.columns
+                .box-work
+                    img(src="images/work/image-2.jpg", alt="")
+                    .overlay
+                        .inner
+                            h4 Title goes here
+                            p Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo
+    // End Work
+    // Contact
+    .full-width#contact
+        .row
+            .small-12.medium-9.medium-centered.columns 
+                .sector.text-center
+                    h1.sector-header Contact
+                    .sector-line ~~~~~~~~ :: ~~~~~~~~
+                    p.sector-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        | sed do tempor incididunt ut labore et dolore magna aliqua.
+    .full-width#contact-form
+        .row
+            .small-12.columns
+                form
+                    .row
+                        .small-12.medium-8.medium-centered.columns
+                            input(type="text", placeholder="Name")
+                    .row
+                        .small-12.medium-8.medium-centered.columns
+                            input(type="email", placeholder="Email address")
+                    .row
+                        .small-12.columns
+                            textarea(name="", cols="30", rows="5", placeholder="Message")
+                    .row
+                        .small-12.columns.text-center
+                            input(type="submit", value="Submit").button.success
+        footer.row
+            .small-12.columns.text-center
+                p Desgin by  
+                    a(href="https://dribbble.com/ashoksuthar", target="_blank") ashoksuthar  
+                    |build by 
+                    a(href="http://www.mentorkadriu.com", target="_blank") Mentor Kadriu
+    // End contact
     // Imported from bower_components/jquery/dist/jquery.min.js
     script(src="js/jquery.min.js")
     // Imported from bower_components/foundation/js/foundation.min.js
-    srcpit(src="js/foundation.min.js")
+    script(src="js/foundation.min.js")
+    script(src="js/smooth-scroll.min.js")
+    script
+        | $(document).foundation();
+        | smoothScroll.init({
+        |    speed : 2000,
+        |    easing : 'easeInQuad'
+        |    });
     script(src="js/main.js")

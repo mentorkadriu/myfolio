@@ -11,6 +11,8 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css">
     <!-- Imported from bower_components/foundation/scss/normalize.scss-->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- Imported from bower_components/fontsawesome/css/font-awesome.min.css-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Imported from bower_components/foundation/scss/foundation.scss  -->
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/main.css">
@@ -18,15 +20,291 @@
     <script src="js/modernizr.js"></script>
   </head>
   <body class="no-js">
-    <div class="full-width">
-      <div class="row collapse">
-        <div class="small-12 columns"></div>
+    <header id="header" class="full-width">
+      <div class="row">
+        <div class="small-12 columns">
+          <div class="contain-to-grid">
+            <nav data-topbar role="navigation" class="top-bar">
+              <ul class="title-area">
+                <li class="name"> 
+                  <h1>My<span>folio</span></h1>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+              </ul>
+              <section class="top-bar-section">
+                <!-- Right Nav Section-->
+                <ul class="right">
+                  <li class="active"><a href="#home" data-scroll>Home</a></li>
+                  <li><a href="#about" data-scroll>About me</a></li>
+                  <li><a href="#services" data-scroll>Services</a></li>
+                  <li><a href="#work" data-scroll>My work</a></li>
+                  <li><a href="#contact" data-scroll>Contact me </a></li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End header-->
+    <!-- Home-->
+    <section id="home" class="full-width">
+      <div class="row">
+        <div class="small-12 columns text-center">
+          <h3 class="h-subtitle">Lorem ipsum dolor sit iusmod tempor</h3>
+          <h1 class="h-title">incididunt bore</h1>
+          <p class="h-desc">Orem ipsum dolor sit amet, consectetur</p>
+          <div class="h-bracket"><i class="fa fa-diamond"></i></div><a href="#" class="button success">Know more</a>
+        </div>
+      </div>
+    </section>
+    <!-- End home-->
+    <!-- About-->
+    <section id="about" class="full-width">
+      <div class="row">
+        <div class="small-12 medium-9 medium-centered columns">
+          <div class="sector text-center">
+            <h1 class="sector-header">About me</h1>
+            <div class="sector-line">~~~~~~~~ :: ~~~~~~~~</div>
+            <p class="sector-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<strong>quis nostrud exercitation ullamco </strong>aboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+          </div>
+        </div>
+        <div class="small-12 columns">
+          <div class="row">
+            <div class="small-12 medium-6 large-3 columns">
+              <div class="box box-about"><i class="fa fa-lightbulb-o"></i>
+                <h4>Title goes here</h4>
+                <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-3 columns">
+              <div class="box box-about"><i class="fa fa-pencil"></i>
+                <h4>Title goes here</h4>
+                <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-3 columns">
+              <div class="box box-about"><i class="fa fa-gear"></i>
+                <h4>Title goes here</h4>
+                <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+            <div class="small-12 medium-6 large-3 columns">
+              <div class="box box-about"><i class="fa fa-desktop"></i>
+                <h4>Title goes here</h4>
+                <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End about-->
+    <!-- Services-->
+    <div id="services" class="full-width">
+      <div class="row">
+        <div class="small-12 medium-6 columns">
+          <div id="services-left" class="row">
+            <div class="small-12 columns small-text-center medium-text-left">
+              <div class="sector">
+                <h1 class="sector-header">Services</h1>
+                <div class="sector-line">~~~~~~~~ :: ~~~~~~~~</div>
+                <p class="sector-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>sed do tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="small-12 columns">
+              <div class="row">
+                <div class="small-12 medium-6 columns">
+                  <div class="box box-services"><i class="fa fa-globe"></i>
+                    <h4>Title goes here</h4>
+                    <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+                  </div>
+                </div>
+                <div class="small-12 medium-6 columns">
+                  <div class="box box-services"><i class="fa fa-search"></i>
+                    <h4>Title goes here</h4>
+                    <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+                  </div>
+                </div>
+                <div class="small-12 medium-6 columns">
+                  <div class="box box-services"><i class="fa fa-clock-o"></i>
+                    <h4>Title goes here</h4>
+                    <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+                  </div>
+                </div>
+                <div class="small-12 medium-6 columns">
+                  <div class="box box-services"><i class="fa fa-bar-chart"></i>
+                    <h4>Title goes here</h4>
+                    <p>onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-6 columns"><img src="images/llaptop.jpg" alt=""></div>
       </div>
     </div>
+    <!-- End sevices-->
+    <!-- Work-->
+    <div id="work" class="full-width">
+      <div id="work-header" class="row">
+        <div class="small-12 medium-9 medium-centered columns">
+          <div class="sector text-center">
+            <h1 class="sector-header">My Work</h1>
+            <div class="sector-line">~~~~~~~~ :: ~~~~~~~~</div>
+            <p class="sector-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+              sed do tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="full-width">
+        <div class="small-12 medium-6 large-3 columns">
+          <div class="box-work"><img src="images/work/image-1.jpg" alt="">
+            <div class="overlay">
+              <div class="inner">
+                <h4>Title goes here</h4>
+                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <div class="box-work"><img src="images/work/image-2.jpg" alt="">
+            <div class="overlay">
+              <div class="inner">
+                <h4>Title goes here</h4>
+                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <div class="box-work"><img src="images/work/image-3.jpg" alt="">
+            <div class="overlay">
+              <div class="inner">
+                <h4>Title goes here</h4>
+                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <div class="box-work"><img src="images/work/image-4.jpg" alt="">
+            <div class="overlay">
+              <div class="inner">
+                <h4>Title goes here</h4>
+                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <div class="box-work"><img src="images/work/image-5.jpg" alt="">
+            <div class="overlay">
+              <div class="inner">
+                <h4>Title goes here</h4>
+                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <div class="box-work"><img src="images/work/image-6.jpg" alt="">
+            <div class="overlay">
+              <div class="inner">
+                <h4>Title goes here</h4>
+                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <div class="box-work"><img src="images/work/image-1.jpg" alt="">
+            <div class="overlay">
+              <div class="inner">
+                <h4>Title goes here</h4>
+                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 medium-6 large-3 columns">
+          <div class="box-work"><img src="images/work/image-2.jpg" alt="">
+            <div class="overlay">
+              <div class="inner">
+                <h4>Title goes here</h4>
+                <p>Onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Work-->
+    <!-- Contact-->
+    <div id="contact" class="full-width">
+      <div class="row">
+        <div class="small-12 medium-9 medium-centered columns"> 
+          <div class="sector text-center">
+            <h1 class="sector-header">Contact</h1>
+            <div class="sector-line">~~~~~~~~ :: ~~~~~~~~</div>
+            <p class="sector-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+              sed do tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact-form" class="full-width">
+      <div class="row">
+        <div class="small-12 columns">
+          <form>
+            <div class="row">
+              <div class="small-12 medium-8 medium-centered columns">
+                <input type="text" placeholder="Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 medium-8 medium-centered columns">
+                <input type="email" placeholder="Email address">
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns">
+                <textarea name="" cols="30" rows="5" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 columns text-center">
+                <input type="submit" value="Submit" class="button success">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="row">
+        <div class="small-12 columns text-center">
+          <p>Desgin by  <a href="https://dribbble.com/ashoksuthar" target="_blank">ashoksuthar  </a>build by <a href="http://www.mentorkadriu.com" target="_blank">Mentor Kadriu</a></p>
+        </div>
+      </footer>
+    </div>
+    <!-- End contact-->
     <!-- Imported from bower_components/jquery/dist/jquery.min.js-->
     <script src="js/jquery.min.js"></script>
     <!-- Imported from bower_components/foundation/js/foundation.min.js-->
-    <srcpit src="js/foundation.min.js"></srcpit>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+      $(document).foundation();
+      smoothScroll.init({
+         speed : 2000,
+         easing : 'easeInQuad'
+         });
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -94,11 +94,12 @@ $font-family-sans-serif:'Open Sans', sans-serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
-// $font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
 
-
+$black : #0b0b0b;
 $green : #02918c;
+$gray: #7e8286;
 $yellow : #cfc91d;
 
 $white       : #FFFFFF;
@@ -117,21 +118,21 @@ $white       : #FFFFFF;
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
-// $oil         : #333333;
-// $jet         : #222222;
+$oil         : #333333;
+$jet         : $gray ;// #222222;
 // $black       : #000000;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
-// $success-color: #43AC6A;
+$success-color: $yellow ;//#43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
+$body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -638,11 +639,11 @@ $white       : #FFFFFF;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
-// $input-focus-bg-color: scale-color($white, $lightness: -2%);
-// $input-border-color: scale-color($white, $lightness: -20%);
-// $input-focus-border-color: scale-color($white, $lightness: -40%);
+$input-font-size: rem-calc(16);
+$input-bg-color: $black ;//$white;
+$input-focus-bg-color: scale-color($black, $lightness: 15%);
+$input-border-color: scale-color($black, $lightness: 0%);
+$input-focus-border-color: scale-color($black, $lightness: 0%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-border-radius: $global-radius;
@@ -1385,7 +1386,7 @@ $white       : #FFFFFF;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+$topbar-bg-color: $green;//$oil;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1393,7 +1394,7 @@ $white       : #FFFFFF;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: $font-weight-normal;
+$topbar-title-weight: $font-weight-bold;// $font-weight-normal;
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
@@ -1401,14 +1402,14 @@ $white       : #FFFFFF;
 // $topbar-link-color-hover: $white;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
-// $topbar-link-weight: $font-weight-normal;
+$topbar-link-weight: $font-weight-bold;//$font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: $oil;
+$topbar-link-bg-hover: scale-color($green, $lightness: -14%);// $oil;
 // $topbar-link-bg-color-hover: $charcoal;
-// $topbar-link-bg-active: $primary-color;
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+$topbar-link-bg-active: scale-color($green, $lightness: -14%);// $primary-color;
+$topbar-link-bg-active-hover: scale-color($green, $lightness: -20%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);
@@ -1418,10 +1419,10 @@ $white       : #FFFFFF;
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: $oil;
+$topbar-dropdown-bg: $green ;//$oil;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
-// $topbar-dropdown-link-bg: $oil;
+$topbar-dropdown-link-bg:  $green; //$oil;
 // $topbar-dropdown-link-bg-hover: $oil;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
@@ -1440,8 +1441,8 @@ $white       : #FFFFFF;
 // $topbar-menu-link-weight: $font-weight-bold;
 // $topbar-menu-link-color: $white;
 // $topbar-menu-icon-color: $white;
-// $topbar-menu-link-color-toggled: $jumbo;
-// $topbar-menu-icon-color-toggled: $jumbo;
+$topbar-menu-link-color-toggled: $white ;//$jumbo;
+$topbar-menu-icon-color-toggled: $white ;//$jumbo;
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles
