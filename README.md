@@ -1,5 +1,5 @@
 
-![](https://github.com/mentorkadriu/myfolio/blob/master/myfolio-broswer.jpg "Myfolio")
+![](https://github.com/mentorkadriu/myfolio/blob/master/myfolio-browser.jpg "Myfolio")
 
 ## Install ##
 
@@ -35,4 +35,4 @@
 
 #### Full image
 
-![](https://github.com/mentorkadriu/myfolio/blob/master/myfolio.jpg "Myfolio")
+![](https://github.com/mentorkadriu/myfolio/blob/master/MYFOLIO.jpg "Myfolio")
