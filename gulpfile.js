@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-      baseDir: "./dist"
+      baseDir: "./"
     }
   });
 });
@@ -65,7 +65,7 @@ gulp.task('templates', function() {
     .pipe(jade({
       pretty: true
     }))
-    .pipe( gulp.dest('dist/') );
+    .pipe( gulp.dest('./') );
 });
 
 
